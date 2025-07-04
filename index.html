@@ -637,6 +637,42 @@
 				background-image: none !important;
 			}
 		}
+
+.image-gallary-section {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    > :not(:hover) {
+      opacity: 0.4;
+    }
+  }
+
+  .card {
+    transition: transform 0.5s ease;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+	border: 5px solid #e9b300;
+
+    &:hover {
+      cursor: zoom-in;
+      transform: scale(1.1);
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
 	</style>
 	<link rel="icon" href="/eevee_logo.png" sizes="32x32" />
 	<link rel="icon" href="/eevee_logo.png" sizes="192x192" />
@@ -821,7 +857,32 @@
 						</div>
 					</div>
 				</div>
+				<div class="elementor-element elementor-element-56deeb5 elementor-widget elementor-widget-heading"
+						data-id="56deeb5" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-widget-container">
+							<h2 class="elementor-heading-title elementor-size-default">Eevee Gallery 
+
+							</h2>
+						</div>
+					</div>
+																<div class="image-gallary-section">
+												<div class="card">
+													<img src="/v1.gif" alt="Man with a beard smiling confidently against a plain background" />
+												</div>
+												<div class="card">
+													<img src="/v2.gif" alt="Young man with curly hair and beard in a thoughtful pose" />
+												</div>
+												<div class="card">
+													<img src="/v3.gif" alt="Serious man in black jacket looking at the camera" />
+												</div>
+													<div class="card">
+													<img src="/v4.gif" alt="Man with short hair and hoodie smiling gently" />
+												</div>    
+												<div class="card">
+													<img src="/v5.gif" alt="Man with short hair and hoodie smiling gently" />
+												</div>
 			</div>
+
 		</div>
 		
 		<div class="elementor-element elementor-element-04b3266 Answers e-flex e-con-boxed e-con e-parent"
